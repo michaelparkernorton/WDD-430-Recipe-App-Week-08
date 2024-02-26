@@ -55,11 +55,11 @@
       </div>
       <div class="row">
         <div class="col-xs-12" formArrayName="ingredients">
-          <div
+          <!-- <div
             class="row"
             *ngFor="let ingredientCtrl of recipeForm.get('ingredients').controls; let i = index"
             [formGroupName]="i"
-            style="margin-top: 10px;">
+            style="margin-top: 10px;"> -->
             <div class="col-xs-8">
               <input
                 type="text"
@@ -73,10 +73,10 @@
                 formControlName="amount">
             </div>
             <div class="col-xs-2">
-              <button
+              <!-- <button
                 type="button"
                 class="btn btn-danger"
-                (click)="onDeleteIngredient(i)">X</button>
+                (click)="onDeleteIngredient(i)">X</button> -->
             </div>
           </div>
           <hr>
@@ -88,7 +88,7 @@
                 (click)="onAddIngredient()">Add Ingredient</button>
             </div>
           </div>
-        </div>
+        <!-- </div> -->
       </div>
     </form>
   </div>
